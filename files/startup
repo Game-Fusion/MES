@@ -12,6 +12,13 @@ function centerSlow(y,string)
   textutils.slowPrint(string)
 end
 
+if disk.isPresent("right") then if disk.hasData("right") then if fs.exists("/disk/game") then shell.run("/disk/game")
+elseif disk.isPresent("left") then if disk.hasData("left") then if fs.exists("/disk/game") then shell.run("/disk/game")
+elseif disk.isPresent("top") then if disk.hasData("top") then if fs.exists("/disk/game") then shell.run("/disk/game")
+elseif disk.isPresent("bottom") then if disk.hasData("bottom") then if fs.exists("/disk/game") then shell.run("/disk/game")
+elseif disk.isPresent("front") then if disk.hasData("front") then if fs.exists("/disk/game") then shell.run("/disk/game")
+elseif disk.isPresent("back") then if disk.hasData("back") then if fs.exists("/disk/game") then shell.run("/disk/game")
+else
 term.setBackgroundColour(colours.white)
 term.clear()
 term.setTextColour(colours.black)
@@ -48,4 +55,5 @@ while true do render()
   if key == keys.one then shell.run("/disk/game")
   elseif key == keys.two then os.shutdown()
   else end
+  end
   end
