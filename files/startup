@@ -1,0 +1,21 @@
+function center(y,string)
+  local w,h = term.getSize()
+  local x = (w/2)-(#string/2)
+  term.setCursorPos(x,y)
+  print(string)
+end
+
+function centerSlow(y,string)
+  local w,h = term.getSize()
+  local x = (w/2)-(#string/2)
+  term.setCursorPos(x,y)
+  textutils.slowPrint(string)
+end
+
+term.setBackgroundColour(colours.white)
+term.clear()
+term.setTextColour(colours.black)
+center(8,"Welcome to MES.")
+sleep(1.25)
+term.clear()
+shell.run("MES/menu")
