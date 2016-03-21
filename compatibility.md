@@ -23,3 +23,4 @@ Legend:
 |Building Game|Wrapper v1.1|***|Runs perfectly with minor graphical issues, proceeding past the title screen is impossible due to a lack of mouse click events|
 |CCSand|Wrapper v1.1|*|Game fails to boot; game requires an advanced computer|
 |Fish Simulator|Wrapper 1.1|****|Graphical glitches include no scenery and no ground[and some odd contrast between the black background and fish], but otherwise perfect|
+|TRON|Wrapper 1.1|*****|Works without flaws, absolutely perfect! I would recommend removing the red/blue in the top corner though|
