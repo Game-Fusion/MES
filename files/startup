@@ -1,3 +1,4 @@
+--MES by Mr_Iron2 and Gonow32
 function center(y,string)
   local w,h = term.getSize()
   local x = (w/2)-(#string/2)
@@ -12,58 +13,111 @@ function centerSlow(y,string)
   textutils.slowPrint(string)
 end
 
-local diskPath
-for i, v in pairs({peripheral.find("drive")} do
-  if v.isDiskPresent() and v.getMountPath() then
-    diskPath = v.getMountPath()
-    break
+local current = term.current()
+function term.current()
+  return window.create(current,1,1,current.getSize())
+end
+
+local oldback = term.setBackgroundColour
+function term.setBackgroundColor(colour)
+  if colour == 1 then
+    oldback(colour)
+  else
+    oldback(colours.black)
   end
 end
-if diskPath then
-  shell.run("/"..diskPath.."/game")
-else
-  term.setBackgroundColour(colours.white)
-  term.clear()
-  term.setTextColour(colours.black)
-  center(8,"Welcome to MES.")
-  sleep(1.25)
+
+term.setBackgroundColour = term.setBackgroundColor
+
+local oldtext = term.setTextColour
+function term.setTextColor(colour)
+  if colour == 32768 then
+    oldtext(colour)
+  else
+    oldtext(colours.white)
+  end  
+end
+
+term.setTextColour = term.setTextColor
+
+if disk.isPresent("right") then 
+  if disk.hasData("right") then 
+    if fs.exists("/disk/game") then 
+      shell.run("/disk/game")
+    end
+  end
+elseif disk.isPresent("left") then 
+  if disk.hasData("left") then 
+    if fs.exists("/disk/game") then 
+      shell.run("/disk/game")
+    end
+  end
+elseif disk.isPresent("top") then 
+  if disk.hasData("top") then 
+    if fs.exists("/disk/game") then 
+      shell.run("/disk/game")
+    end
+  end
+elseif disk.isPresent("bottom") then 
+  if disk.hasData("bottom") then 
+    if fs.exists("/disk/game") then 
+      shell.run("/disk/game")
+    end
+  end
+elseif disk.isPresent("front") then 
+  if disk.hasData("front") then 
+    if fs.exists("/disk/game") then 
+      shell.run("/disk/game")
+    end
+  end
+elseif disk.isPresent("back") then 
+  if disk.hasData("back") then 
+    if fs.exists("/disk/game") then 
+      shell.run("/disk/game")
+    end
+  end
+end
+term.setBackgroundColour(colours.white)
+term.clear()
+term.setTextColour(colours.black)
+center(8,"Welcome to MES.")
+sleep(1.25)
 
 
-  local function render()
+local function render()
+term.setBackgroundColour(colours.black)
+term.setTextColour(colours.white)
+center(7,"Press the number above either option")
+term.clear()
+term.setBackgroundColour(colours.white)
+term.setTextColour(colours.black)
+center(3,"             ")
+center(4,"     MES     ")
+center(5,"             ")
+term.setCursorPos(5,9)
+print("     [1]     ")
+term.setCursorPos(5,10)
+print("    Disk     ")
+term.setCursorPos(5,11)
+print("             ")
+term.setCursorPos(33,9)
+print("     [2]     ")
+term.setCursorPos(33,10)
+print("   Shutdown  ")
+term.setCursorPos(33,11)
+print("             ")
+end
+
+while true do 
+  render()
+  local event,key = os.pullEvent("key")
+  if key == keys.one then
     term.setBackgroundColour(colours.black)
     term.setTextColour(colours.white)
-    center(7,"Press the number above either option")
     term.clear()
-    term.setBackgroundColour(colours.white)
-    term.setTextColour(colours.black)
-    center(3,"             ")
-    center(4,"     MES     ")
-    center(5,"             ")
-    term.setCursorPos(5,9)
-    print("     [1]     ")
-    term.setCursorPos(5,10)
-    print("    Disk     ")
-    term.setCursorPos(5,11)
-    print("             ")
-    term.setCursorPos(33,9)
-    print("     [2]     ")
-    term.setCursorPos(33,10)
-    print("   Shutdown  ")
-    term.setCursorPos(33,11)
-    print("             ")
-  end
-
-  while true do
-    render()
-    local event, key = os.pullEvent("key")
-    if key == keys.one then
-      term.setBackgroundColour(colours.black)
-      term.setTextColour(colours.white)
-      term.clear()
-      term.setCursorPos(1,1)
-      shell.run("/disk/game")
-    elseif key == keys.two then 
-      os.shutdown()
-    end
+    term.setCursorPos(1,1) 
+    shell.run("/disk/game")  
+  elseif key == keys.two then 
+    os.shutdown()
   end
 end
