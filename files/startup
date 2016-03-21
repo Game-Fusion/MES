@@ -12,12 +12,15 @@ function centerSlow(y,string)
   textutils.slowPrint(string)
 end
 
-if disk.isPresent("right") then if disk.hasData("right") then if fs.exists("/disk/game") then shell.run("/disk/game")
-elseif disk.isPresent("left") then if disk.hasData("left") then if fs.exists("/disk/game") then shell.run("/disk/game")
-elseif disk.isPresent("top") then if disk.hasData("top") then if fs.exists("/disk/game") then shell.run("/disk/game")
-elseif disk.isPresent("bottom") then if disk.hasData("bottom") then if fs.exists("/disk/game") then shell.run("/disk/game")
-elseif disk.isPresent("front") then if disk.hasData("front") then if fs.exists("/disk/game") then shell.run("/disk/game")
-elseif disk.isPresent("back") then if disk.hasData("back") then if fs.exists("/disk/game") then shell.run("/disk/game")
+local diskPath
+for i, v in pairs({peripheral.find("drive")} do
+if v.isDiskPresent() and v.getMountPath() then
+diskPath = v.getMountPath()
+break
+end
+end
+if diskPath then
+shell.run("/"..diskPath.."/game")
 else
 term.setBackgroundColour(colours.white)
 term.clear()
