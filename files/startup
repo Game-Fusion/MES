@@ -14,49 +14,50 @@ end
 
 local diskPath
 for i, v in pairs({peripheral.find("drive")} do
-if v.isDiskPresent() and v.getMountPath() then
-diskPath = v.getMountPath()
-break
-end
+  if v.isDiskPresent() and v.getMountPath() then
+    diskPath = v.getMountPath()
+    break
+  end
 end
 if diskPath then
-shell.run("/"..diskPath.."/game")
+  shell.run("/"..diskPath.."/game")
 else
-term.setBackgroundColour(colours.white)
-term.clear()
-term.setTextColour(colours.black)
-center(8,"Welcome to MES.")
-sleep(1.25)
+  term.setBackgroundColour(colours.white)
+  term.clear()
+  term.setTextColour(colours.black)
+  center(8,"Welcome to MES.")
+  sleep(1.25)
 
 
-local function render()
-term.setBackgroundColour(colours.black)
-term.setTextColour(colours.white)
-center(7,"Press the number above either option")
-term.clear()
-term.setBackgroundColour(colours.white)
-term.setTextColour(colours.black)
-center(3,"             ")
-center(4,"     MES     ")
-center(5,"             ")
-term.setCursorPos(5,9)
-print("     [1]     ")
-term.setCursorPos(5,10)
-print("    Disk     ")
-term.setCursorPos(5,11)
-print("             ")
-term.setCursorPos(33,9)
-print("     [2]     ")
-term.setCursorPos(33,10)
-print("   Shutdown  ")
-term.setCursorPos(33,11)
-print("             ")
+  local function render()
+    term.setBackgroundColour(colours.black)
+    term.setTextColour(colours.white)
+    center(7,"Press the number above either option")
+    term.clear()
+    term.setBackgroundColour(colours.white)
+    term.setTextColour(colours.black)
+    center(3,"             ")
+    center(4,"     MES     ")
+    center(5,"             ")
+    term.setCursorPos(5,9)
+    print("     [1]     ")
+    term.setCursorPos(5,10)
+    print("    Disk     ")
+    term.setCursorPos(5,11)
+    print("             ")
+    term.setCursorPos(33,9)
+    print("     [2]     ")
+    term.setCursorPos(33,10)
+    print("   Shutdown  ")
+    term.setCursorPos(33,11)
+    print("             ")
+  end
+
+  while true do
+    render()
+    local event, key = os.pullEvent("key")
+    if key == keys.one then shell.run("/disk/game")
+    elseif key == keys.two then os.shutdown()
+    else end
+  end
 end
-
-while true do render()
-  local event,key = os.pullEvent("key")
-  if key == keys.one then shell.run("/disk/game")
-  elseif key == keys.two then os.shutdown()
-  else end
-  end
-  end
