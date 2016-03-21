@@ -56,8 +56,14 @@ else
   while true do
     render()
     local event, key = os.pullEvent("key")
-    if key == keys.one then shell.run("/disk/game")
-    elseif key == keys.two then os.shutdown()
-    else end
+    if key == keys.one then
+      term.setBackgroundColour(colours.black)
+      term.setTextColour(colours.white)
+      term.clear()
+      term.setCursorPos(1,1)
+      shell.run("/disk/game")
+    elseif key == keys.two then 
+      os.shutdown()
+    end
   end
 end
