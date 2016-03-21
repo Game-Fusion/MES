@@ -1,10 +1,15 @@
 # MES - Colour-to-Monochrome Compatibility
 
 Legend:
+
 1 star (*): Crashed/failed to load
+
 2 star (**): Boots but doesn't work/no mouse
+
 3 star (***): Works, but no mouse supported
+
 4 star (****): Works perfectly but has glitches
+
 5 star (*****): Works flawlessly
 
 -------------------------------------------------------------------------------------------------
