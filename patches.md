@@ -3,7 +3,6 @@
 |Game Name|Notes|
 |:-------:|:---------------------------------------:|
 |Skyfall|Minor patch, simple graphical bug fixed, now has no issues|
-|Redirection|Game boots fine as click is changed to enter, you can't proceed yet due to lack of mouse_drag and graphical glitches|
 
 To be patched:
 
