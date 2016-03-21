@@ -25,3 +25,5 @@ Game of Life / ** / [Lewisk3's Game of Life] Boots with no issues, gets in-game,
 Battle       / *** / Boots perfectly, however proceeding is impossible without clicking
 
 Helios       / ** / Game loads, but a severe graphical glitch means you can't see anything
+
+Breakout     / *** / Severe graphical issues, however controls are perfect and gameplay isn't critically affected
