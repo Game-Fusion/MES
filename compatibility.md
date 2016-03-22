@@ -22,6 +22,8 @@ Legend:
 |Breakout|Wrapper v1.1|****|Severe graphical issues, however controls are perfect and gameplay isn't critically affected|
 |Building Game|Wrapper v1.1|***|Runs perfectly with minor graphical issues, proceeding past the title screen is impossible due to a lack of mouse click events|
 |CCSand|Wrapper v1.1|*|Game fails to boot; game requires an advanced computer|
+|CCSand (with patch)|Wrapper v1.1|***|Seems to work fine once booted, apart from the fact you can't do anything|
 |Fish Simulator|Wrapper 1.1|****|Graphical glitches include no scenery and no ground[and some odd contrast between the black background and fish], but otherwise perfect|
 |TRON|Wrapper 1.1|*****|Works without flaws, absolutely perfect! I would recommend removing the red/blue in the top corner though|
 |Whosit!|Wrapper 1.1|*****|No issues apart from paint image not displaying, game itself is appauling though, no gameplay|
+|Bomb|Wrapper v1.1|**|Game boots, but you can't proceed past the loading screen due to no mouse controls|
