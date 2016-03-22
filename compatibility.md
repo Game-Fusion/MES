@@ -24,3 +24,4 @@ Legend:
 |CCSand|Wrapper v1.1|*|Game fails to boot; game requires an advanced computer|
 |Fish Simulator|Wrapper 1.1|****|Graphical glitches include no scenery and no ground[and some odd contrast between the black background and fish], but otherwise perfect|
 |TRON|Wrapper 1.1|*****|Works without flaws, absolutely perfect! I would recommend removing the red/blue in the top corner though|
+|Whosit!|Wrapper 1.1|*****|No issues apart from paint image not displaying, game itself is appauling though, no gameplay|
