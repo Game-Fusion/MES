@@ -25,12 +25,7 @@ Games
 |CCSand|Wrapper v1.1|*|Game fails to boot; game requires an advanced computer|
 |CCSand (with patch)|Wrapper v1.1|***|Seems to work fine once booted, apart from the fact you can't do anything|
 |CCSand|Wrapper v1.3|***|Gets in-game, however strange graphics and no mouse makes it unplayable|
-|Fish Simulator|Wrapper 1.1|****|Graphical glitches include no scenery and no ground[and some odd contrast between the black background and fish], but otherwise perfect|
-|TRON|Wrapper 1.1|*****|Works without flaws, absolutely perfect! I would recommend removing the red/blue in the top corner though|
-|Whosit!|Wrapper 1.1|*****|No issues apart from paint image not displaying, game itself is appauling though, no gameplay|
+|Fish Simulator|Wrapper v1.1|****|Graphical glitches include no scenery and no ground[and some odd contrast between the black background and fish], but otherwise perfect|
+|TRON|Wrapper v1.1|*****|Works without flaws, absolutely perfect! I would recommend removing the red/blue in the top corner though|
+|Whosit!|Wrapper v1.1|*****|No issues apart from paint image not displaying, game itself is appauling though, no gameplay|
 |Bomb|Wrapper v1.1|**|Game boots, but you can't proceed past the loading screen due to no mouse controls|
-
-Programs/OSes
-|Name|Wrapper Version|Working?(See Legend)|Details and notes|
-|:-------:|:---------:|:------------------:|:---------------------------------------:|
-|OneOS|Wrapper v1.3|**|Can be downloaded and boots normally with perfect graphics, however you can't proceed past setup due to no mouse click|
