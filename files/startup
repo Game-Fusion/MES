@@ -44,45 +44,14 @@ function term.setTextColor(colour)
   end  
 end
 
-term.setTextColour = term.setTextColor
-
-if disk.isPresent("right") then 
-  if disk.hasData("right") then 
-    if fs.exists("/disk/game") then 
-      shell.run("/disk/game")
-    end
-  end
-elseif disk.isPresent("left") then 
-  if disk.hasData("left") then 
-    if fs.exists("/disk/game") then 
-      shell.run("/disk/game")
-    end
-  end
-elseif disk.isPresent("top") then 
-  if disk.hasData("top") then 
-    if fs.exists("/disk/game") then 
-      shell.run("/disk/game")
-    end
-  end
-elseif disk.isPresent("bottom") then 
-  if disk.hasData("bottom") then 
-    if fs.exists("/disk/game") then 
-      shell.run("/disk/game")
-    end
-  end
-elseif disk.isPresent("front") then 
-  if disk.hasData("front") then 
-    if fs.exists("/disk/game") then 
-      shell.run("/disk/game")
-    end
-  end
-elseif disk.isPresent("back") then 
-  if disk.hasData("back") then 
-    if fs.exists("/disk/game") then 
-      shell.run("/disk/game")
-    end
+for i, v in ipairs({peripheral.find("drive")}) do
+  if v.isDiskPresent() and v.getMountPath() and fs.exists(v.getMountPath().."/game") then
+    shell.run("/"..v.getMountPath().."/game")
+    break
   end
 end
+
+term.setTextColour = term.setTextColor
 term.setBackgroundColour(colours.white)
 term.clear()
 term.setTextColour(colours.black)
