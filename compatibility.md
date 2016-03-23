@@ -32,4 +32,5 @@ Games
 
 Programs/OSes
 |Name|Wrapper Version|Working?(See Legend)|Details and notes|
+|:-------:|:---------:|:------------------:|:---------------------------------------:|
 |OneOS|Wrapper v1.3|**|Can be downloaded and boots normally with perfect graphics, however you can't proceed past setup due to no mouse click|
