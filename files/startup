@@ -1,4 +1,10 @@
---MES by Mr_Iron2 and Gonow32
+--MES - Monochrome Entertainment System
+-- Credits:
+-- Mr_Iron2 - Concept, startup, Menu, Compatibility Help [with Wrapper]
+-- Gonow32 - Fixes and Colour to Monochrome Wrapper
+-- MultMine: Code cleanup
+-- Luca_S - Compatibility List [with Wrapper]
+
 function center(y,string)
   local w,h = term.getSize()
   local x = (w/2)-(#string/2)
