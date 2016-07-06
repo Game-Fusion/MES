@@ -20,28 +20,30 @@ function centerSlow(y,string)
 end
 
 local current = term.current()
-function term.current()
-  return window.create(current,1,1,current.getSize())
-end
+-- function term.current() -- WHO IS RESPONSIBLE FOR THIS ABOMINATION OF CODE
+term.redirect(window.create(current,1,1,current.getSize()))
+-- end
 
-local oldback = term.setBackgroundColour
-function term.setBackgroundColor(colour)
-  if colour == 1 then
-    oldback(colour)
-  else
-    oldback(colours.black)
+if not term.isColour() then
+  local oldback = term.setBackgroundColour
+  function term.setBackgroundColor(colour)
+    if colour == 1 then
+      oldback(colour)
+    else
+      oldback(colours.black)
+    end
   end
-end
 
-term.setBackgroundColour = term.setBackgroundColor
+  term.setBackgroundColour = term.setBackgroundColor
 
-local oldtext = term.setTextColour
-function term.setTextColor(colour)
-  if colour == 32768 then
-    oldtext(colour)
-  else
-    oldtext(colours.white)
-  end  
+  local oldtext = term.setTextColour
+  function term.setTextColor(colour)
+    if colour == 32768 then
+      oldtext(colour)
+    else
+      oldtext(colours.white)
+    end  
+  end
 end
 
 for i, v in ipairs({peripheral.find("drive")}) do
