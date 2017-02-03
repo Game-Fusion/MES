@@ -1,4 +1,4 @@
---MES - Monochrome Entertainment System
+-- MES - Monochrome Entertainment System
 -- Credits:
 -- Mr_Iron2 - Concept, startup, Menu, Compatibility Help [with Wrapper]
 -- Gonow32 - Fixes and Colour to Monochrome Wrapper
@@ -20,9 +20,7 @@ function centerSlow(y,string)
 end
 
 local current = term.current()
--- function term.current() -- WHO IS RESPONSIBLE FOR THIS ABOMINATION OF CODE
 term.redirect(window.create(current,1,1,current.getSize()))
--- end
 
 if not term.isColour() then
   local oldback = term.setBackgroundColour
@@ -71,11 +69,15 @@ term.setTextColour(colours.black)
 center(3,"             ")
 center(4,"     MES     ")
 center(5,"             ")
+term.setCursorPos(5,8)
+print("             ")
 term.setCursorPos(5,9)
 print("     [1]     ")
 term.setCursorPos(5,10)
 print("    Disk     ")
 term.setCursorPos(5,11)
+print("             ")
+term.setCursorPos(33,8)
 print("             ")
 term.setCursorPos(33,9)
 print("     [2]     ")
