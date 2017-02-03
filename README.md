@@ -1,23 +1,25 @@
 # MES
 Mono[chrome] Entertainment System, or MES - the only monochrome based console.
 
-The Mono Entertainment System, or MES, is going to be one of if not the only ever console targeted at Monochrome users.
+The Mono Entertainment System, or MES, is the first console targeted at Monochrome users.
 
 This is for you if:
 
 * You like monochrome's simple black/white style
 
-* You're in survival and can't afford a resource-expensive advanced PC
+* You're in survival and can't afford an expensive advanced PC
 
 * You're a collector
 
+* You're not good with colour and would prefer to work with a simple black/white interface (colour blindness? just not good with colour?)
+
 So let's say you didn't want one for these reasons. Why get a MES?
 
-* Games are readily available
+* Games are available - and being reprinted in 2017!
 
-* Colour games can be played
+* Colour games can be played thanks to Gonow32's fantastic Colour-to-Mono wrapper
 
-* It is a nice change from the flagships commonly found
+* It is a very unique and special system in its own right for punching above its weight (by running colour games)
 
 Wait, hang on. Colour games?! I thought this was a monochrome console!
 
