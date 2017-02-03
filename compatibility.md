@@ -11,7 +11,8 @@ Legend:
 4: Works flawlessly
 
 Games
-|Game Name|Wrapper Version|Working? [See above]|Notes [e.g. any bugs, is it perfect etc.]|
+
+|Game Name|Wrapper Version|Working?|Notes [e.g. any bugs, is it perfect etc.]|
 |:-------:|:---------:|:------------------:|:---------------------------------------:|
 |Skyfall|Wrapper v1.1|5|Game runs at full speed with no critical issues. Minor graphical glitch with the Nitrosoft Title display|
 |Redirection|Wrapper v1.1|2|Game boots fine once click is changed to enter, but you can't proceed due to lack of mouse_drag and graphical glitches|
