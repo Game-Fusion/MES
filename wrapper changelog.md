@@ -2,7 +2,7 @@
 
 v1.3:
 * Code cleanup
-* Added new function; term.isColor() now returns true and should seal the deal for 100% of games booting
+* Added new function; term.isColor() now returns true and should make 100% of games at least *boot*
 
 v1.2:
 * Added support for term.getBackgroundColour and term.getTextColour, adding backwards compatibility with 1.74 games, assuming there's no other issues [eg mouse or bugs]
