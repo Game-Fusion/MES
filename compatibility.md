@@ -27,3 +27,7 @@ Games
 |TRON|Wrapper v1.1|4|Works without flaws, absolutely perfect! The "Red"/"Blue" in the top corner during gameplay should be removed in a patch (optionally, not game breaking) as it looks wrong|
 |Whosit!|Wrapper v1.1|4|No issues apart from paint logo not displaying at boot|
 |Bomb|Wrapper v1.1|2|Game boots, but you can't proceed past the loading screen due to no mouse controls|
+|Lasers|Wrapper 1.3|3|Game boots, works perfectly but menu doesn't render correctly|
+|Lasers (Patched)|Wrapper 1.3|4|Perfect; patch fixes GUI|
+|BBTetris|Wrapper 1.3|4|Designed for monochrome, works perfectly|
+|Stacker|Wrapper 1.3|4|Monochrome game, perfect|
