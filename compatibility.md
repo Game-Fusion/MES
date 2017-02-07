@@ -31,3 +31,4 @@ Games
 |Lasers (Patched)|Wrapper 1.3|4|Perfect; patch fixes GUI|
 |BBTetris|Wrapper 1.3|4|Designed for monochrome, works perfectly|
 |Stacker|Wrapper 1.3|4|Monochrome game, perfect|
+|Connect-4|Wrapper 1.3|3|Game works but has - as I expected - imperfect graphics, as it relies on blue/red counters for Connect 4 and the grey Connect 4 board. Mouse input for menu button in top left also broken.|
