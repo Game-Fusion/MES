@@ -4,7 +4,7 @@ Legend:
 
 1: Crashed/failed to load
 
-2: Boots but no mouse
+2: Boots but no mouse/unplayable
 
 3: Works but has graphical glitches
 
@@ -15,10 +15,10 @@ Games
 |Game Name|Wrapper Version|Working?|Notes [e.g. any bugs, is it perfect etc.]|
 |:-------:|:---------:|:------------------:|:---------------------------------------:|
 |Skyfall|Wrapper v1.1|4|Game runs at full speed with no critical issues. Minor graphical glitch with the Nitrosoft Title display|
-|Redirection|Wrapper v1.1|2|Game boots fine once click is changed to enter, but you can't proceed due to lack of mouse_drag and graphical glitches|
+|Redirection|Wrapper v1.1|2|Game boots fine once click is changed to enter, but you can't proceed due to lack of mouse_drag and there are graphical glitches|
 |Game of Life|Wrapper v1.1|2|[Lewisk3's Game of Life] Boots with no issues, gets in-game, however you can't proceed due to no mouse click|
 |Battle|Wrapper v1.1|2|Boots perfectly, however proceeding is impossible without clicking|
-|Helios|Wrapper v1.1|3|Game loads, but a severe graphical glitch means you can't see anything, patch required|
+|Helios|Wrapper v1.1|2|Game loads, but a severe graphical glitch means you can't see anything, patch required|
 |Breakout|Wrapper v1.1|3|Severe graphical issues, however controls are perfect and gameplay isn't critically affected|
 |Building Game|Wrapper v1.1|3|Runs perfectly with minor graphical issues, proceeding past the title screen is impossible due to a lack of mouse click events|
 |CCSand|Wrapper v1.1|1|Game fails to boot; game requires an advanced computer|
