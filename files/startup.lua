@@ -88,13 +88,15 @@ print("             ")
 end
 
 local function sdk()
-  center(2,"MES Development Software")
-  center(5," 1. Boot to shell ")
-  center(7," 2. Development Kit ")
-  center(9," 3. Shut down ")
-  term.setBackgroundColour(colours.black)
-  term.setTextColour(colours.white)
-end
+  local function draw()
+   term.clear()
+   center(2,"MES Development Software")
+   center(5," 1. Boot to shell ")
+   center(7," 2. Development Kit ")
+   center(9," 3. Shut down ")
+   term.setBackgroundColour(colours.black)
+   term.setTextColour(colours.white)
+  end
 
 while true do draw()
   local event,key = os.pullEvent("key")
@@ -120,6 +122,6 @@ while true do
   elseif key == keys.two then 
     os.shutdown()
   elseif key == keys.zero then
-    sdk
+    sdk()
   end
 end
