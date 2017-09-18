@@ -87,6 +87,27 @@ term.setCursorPos(33,11)
 print("             ")
 end
 
+local function sdk()
+  center(2,"MES Development Software")
+  center(5," 1. Boot to shell ")
+  center(7," 2. Development Kit ")
+  center(9," 3. Shut down ")
+  term.setBackgroundColour(colours.black)
+  term.setTextColour(colours.white)
+end
+
+while true do draw()
+  local event,key = os.pullEvent("key")
+  if key == keys.one then
+    shell.run("shell")
+  elseif key == keys.two then 
+    shell.run("/sdk")
+  elseif key == keys.three then
+    os.shutdown()
+  end
+end
+end
+  
 while true do 
   render()
   local event,key = os.pullEvent("key")
@@ -98,5 +119,7 @@ while true do
     shell.run("/disk/game")  
   elseif key == keys.two then 
     os.shutdown()
+  elseif key == keys.zero then
+    sdk
   end
 end
