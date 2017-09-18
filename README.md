@@ -27,6 +27,8 @@ You're right. It is. But we're doing something no monochrome console has ever do
 
 Ever wanted Skyfall on a standard PC? Have a look at it on your MES - there were absolutely no critical issues, and there was just one graphical glitch with the title screen only displaying the word "games" and not the full "nitrosoft games", and this was easily fixed.
 
-Of course, not every game works perfectly. CCSand saw through our trick [fixed in Wrapper v1.3], and many games didn't work due to no mouse support. The wrapper is in early testing, and future plans would be to add an on-screen cursor to emulate a mouse click, controlled by WASD/arrow keys or similar controls.
-
 Anybody who is interested in the project, contact Mr_Iron2.
+
+### UPDATE: MES is now an OPEN PLATFORM!
+
+Yes, that's right! Now anybody and everybody can develop and release games independently for MES! MES is the first games system in ComputerCraft to ever offer this - an official development disk is offered to anyone who asks for it, but not only that, but a basic SDK is included *in MES files* now! 
