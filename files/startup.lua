@@ -1,7 +1,7 @@
 -- MES - Monochrome Entertainment System
 -- Credits:
--- Mr_Iron2 - Concept, startup, Menu, Compatibility Help [with Wrapper]
--- Gonow32 - Fixes and Colour to Monochrome Wrapper
+-- Mr_Iron2 - Concept, startup, menu, wrapper compatibility guide + testing
+-- Gonow32 - Colour to Monochrome Wrapper and improvements
 -- MultMine: Code cleanup
 -- Luca_S - Compatibility List [with Wrapper]
 
@@ -62,7 +62,7 @@ sleep(1.25)
 local function render()
 term.setBackgroundColour(colours.black)
 term.setTextColour(colours.white)
-center(7,"Press the number above either option")
+center(7,"Press a number to continue")
 term.clear()
 term.setBackgroundColour(colours.white)
 term.setTextColour(colours.black)
