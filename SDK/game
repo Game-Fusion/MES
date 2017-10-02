@@ -3,16 +3,16 @@
 -- Licensed for use for the general public
 
 local function draw()
-term.setTextColour(colours.black)
-term.setBackgroundColour(colours.white)
-center(3," Official MES Development Disk ")
-center(6," 1. Boot to shell ")
-center(8," 2. Homebrew devkit ")
-center(10," 3. Shut down ")
-term.setCursorPos(1,18)
-print("v1.0")
-term.setBackgroundColour(colours.black)
-term.setTextColour(colours.white)
+  term.setTextColour(colours.black)
+  term.setBackgroundColour(colours.white)
+  center(3," Official MES Development Disk ")
+  center(6," 1. Boot to shell ")
+  center(8," 2. Dev Kit ")
+  center(10," 3. Shut down ")
+  term.setCursorPos(1,18)
+  print("v1.0")
+  term.setBackgroundColour(colours.black)
+  term.setTextColour(colours.white)
 end
 
 while true do draw()
