@@ -5,20 +5,21 @@
 -- MultMine: Code cleanup
 -- Luca_S - Compatibility List [with Wrapper]
 
-function center(y,string)
+local function center(y,string)
   local w,h = term.getSize()
   local x = (w/2)-(#string/2)
   term.setCursorPos(x,y)
   print(string)
 end
 
-function centerSlow(y,string)
+local function centerSlow(y,string)
   local w,h = term.getSize()
   local x = (w/2)-(#string/2)
   term.setCursorPos(x,y)
   textutils.slowPrint(string)
 end
 
+-- Wrapper code
 local current = term.current()
 term.redirect(window.create(current,1,1,current.getSize()))
 
@@ -44,6 +45,7 @@ if not term.isColour() then
   end
 end
 
+-- Auto-booting compatible games
 for i, v in ipairs({peripheral.find("drive")}) do
   if v.isDiskPresent() and v.getMountPath() and fs.exists(v.getMountPath().."/game") then
     shell.run("/"..v.getMountPath().."/game")
@@ -51,6 +53,7 @@ for i, v in ipairs({peripheral.find("drive")}) do
   end
 end
 
+-- Startup animation
 term.setTextColour = term.setTextColor
 term.setBackgroundColour(colours.white)
 term.clear()
@@ -60,31 +63,31 @@ sleep(1.25)
 
 
 local function render()
-term.setBackgroundColour(colours.black)
-term.setTextColour(colours.white)
-center(7,"Press a number to continue")
-term.clear()
-term.setBackgroundColour(colours.white)
-term.setTextColour(colours.black)
-center(3,"             ")
-center(4,"     MES     ")
-center(5,"             ")
-term.setCursorPos(5,8)
-print("             ")
-term.setCursorPos(5,9)
-print("     [1]     ")
-term.setCursorPos(5,10)
-print("    Disk     ")
-term.setCursorPos(5,11)
-print("             ")
-term.setCursorPos(33,8)
-print("             ")
-term.setCursorPos(33,9)
-print("     [2]     ")
-term.setCursorPos(33,10)
-print("   Shutdown  ")
-term.setCursorPos(33,11)
-print("             ")
+  term.setBackgroundColour(colours.black)
+  term.setTextColour(colours.white)
+  center(7,"Press a number to continue")
+  term.clear()
+  term.setBackgroundColour(colours.white)
+  term.setTextColour(colours.black)
+  center(3,"             ")
+  center(4,"     MES     ")
+  center(5,"             ")
+  term.setCursorPos(5,8)
+  print("             ")
+  term.setCursorPos(5,9)
+  print("     [1]     ")
+  term.setCursorPos(5,10)
+  print("    Disk     ")
+  term.setCursorPos(5,11)
+  print("             ")
+  term.setCursorPos(33,8)
+  print("             ")
+  term.setCursorPos(33,9)
+  print("     [2]     ")
+  term.setCursorPos(33,10)
+  print("   Shutdown  ")
+  term.setCursorPos(33,11)
+  print("             ")
 end
 
 local function sdk()
